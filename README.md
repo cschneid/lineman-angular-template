@@ -26,3 +26,4 @@ This provides the basic configuration needed to get an Angular app up and runnin
 6. open your web browser to localhost:8000
 
 Hopefully this helps you get up and running with AngularJS!
+ 
