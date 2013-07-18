@@ -12,9 +12,8 @@
     <h3>My Stack:</h3>
     <ul class="small-block-grid-2">
       <li ng-repeat="noot in stack">
-        <a ng-click="remove(noot.name)">
-          {{ noot.name }} (X)
-        </a>
+      <span ng-click="remove(noot.name)">
+        <a>{{ noot.name }}<img class="icon" src="/img/icons/png/minus2.png"></a>
       </li>
     </ul>
   </div>
