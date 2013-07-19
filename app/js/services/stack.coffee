@@ -1,20 +1,17 @@
-angular.module("app").factory "StackService", ($q, $http) ->
+angular.module("app").factory "StackService", ($q, NootBuilder) ->
   @stack = {}
-
-  @noot_from_name = (name) ->
-    { 'name': name }
 
   getStack = =>
     return @stack
 
   add = (noot) =>
-    @stack[noot] = @noot_from_name(noot)
+    @stack[noot] = NootBuilder.noot_from_name(noot)
 
   remove = (noot) =>
     delete @stack[noot]
 
   return {
-    getStack: getStack
+    stack: @stack
     add: add
     remove: remove
   }
